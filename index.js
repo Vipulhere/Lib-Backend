@@ -12,7 +12,8 @@ dotenv.config({ path: "./.env" });
 const app = express();
 const port = process.env.PORT || 3001;
 app.use(cors());
-const url = process.env.DATABASE;
+//const url = process.env.DATABASE;
+const url = "mongodb+srv://vipulpedia:vipul2010991776@cluster0.9t06eai.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose.connect(url, {
   useNewUrlParser: true,
